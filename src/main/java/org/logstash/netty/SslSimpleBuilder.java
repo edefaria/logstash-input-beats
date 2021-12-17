@@ -1,7 +1,6 @@
 package org.logstash.netty;
 
 import io.netty.buffer.ByteBufAllocator;
-import io.netty.handler.ssl.OpenSsl;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.SslHandler;
@@ -10,6 +9,8 @@ import org.apache.logging.log4j.Logger;
 import org.logstash.beats.Server;
 
 import javax.net.ssl.SSLEngine;
+import javax.crypto.Cipher;
+import javax.net.ssl.SSLServerSocketFactory;
 import java.io.*;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
