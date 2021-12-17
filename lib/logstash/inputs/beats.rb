@@ -122,7 +122,7 @@ class LogStash::Inputs::Beats < LogStash::Inputs::Base
   config :tls_max_version, :validate => :number, :default => TLS.max.version
 
   # The list of ciphers suite to use, listed by priorities.
-  config :cipher_suites, :validate => :array, :default => org.logstash.netty.SslSimpleBuilder::DEFAULT_CIPHERS
+  config :cipher_suites, :validate => :array, :default => org.logstash.netty.SslSimpleBuilder.getDefaultCiphers
 
   # Close Idle clients after X seconds of inactivity.
   config :client_inactivity_timeout, :validate => :number, :default => 60
