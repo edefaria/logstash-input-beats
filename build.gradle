@@ -16,6 +16,8 @@ targetCompatibility = 1.8
 String jacksonVersion = '2.9.10'
 String jacksonDatabindVersion = '2.9.10.8'
 String log4jVersion = '2.16.0'
+String netty4Version = '4.1.72.Final'
+String nettyTcnativeVersion = '2.0.46.Final'
 
 repositories {
     mavenCentral()
@@ -25,7 +27,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.hamcrest:hamcrest-library:1.3'
     testImplementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
-    implementation 'io.netty:netty-all:4.1.72.Final'
+    implementation "io.netty:netty-all:${netty4Version}"
+    implementation "io.netty:netty-buffer:${netty4Version}"
+    implementation "io.netty:netty-codec:${netty4Version}"
+    implementation "io.netty:netty-common:${netty4Version}"
+    implementation "io.netty:netty-handler:${netty4Version}"
+    implementation "io.netty:netty-resolver:${netty4Version}"
+    implementation "io.netty:netty-tcnative-classes:${nettyTcnativeVersion}"
+    implementation "io.netty:netty-transport-classes-epoll:${netty4Version}"
+    implementation "io.netty:netty-transport-classes-kqueue:${netty4Version}"
+    implementation "io.netty:netty-transport-native-unix-common:${netty4Version}"
+    implementation "io.netty:netty-transport:${netty4Version}"
     implementation 'org.javassist:javassist:3.24.0-GA'
     implementation "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
     implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
