@@ -1,3 +1,22 @@
+## 6.4.0
+ - Feat: review and deprecate ssl protocol/cipher settings [#450](https://github.com/logstash-plugins/logstash-input-beats/pull/450)
+
+## 6.3.1
+ - Fix: Removed use of deprecated `import` of java classes in ruby [#449](https://github.com/logstash-plugins/logstash-input-beats/pull/449)
+
+## 6.3.0
+ - Added support for TLSv1.3. [#447](https://github.com/logstash-plugins/logstash-input-beats/pull/447)
+
+## 6.2.6
+  - Update guidance regarding the private key format and encoding [#445](https://github.com/logstash-plugins/logstash-input-beats/pull/445)
+
+## 6.2.5
+ - Build: do not package log4j-api dependency [#441](https://github.com/logstash-plugins/logstash-input-beats/pull/441).
+   Logstash provides the log4j framework and the dependency is not needed except testing and compiling.
+
+## 6.2.4
+ - Updated log4j dependency to 2.17.0
+
 ## 6.2.3
  - Updated log4j dependency to 2.15.0
 
