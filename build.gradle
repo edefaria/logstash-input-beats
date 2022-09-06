@@ -16,7 +16,7 @@ targetCompatibility = 1.8
 String jacksonVersion = '2.9.10'
 String jacksonDatabindVersion = '2.9.10.8'
 String log4jVersion = '2.18.0'
-String netty4Version = '4.1.80.Final'
+String netty4Version = '4.1.79.Final'
 String nettyTcnativeVersion = '2.0.54.Final'
 
 repositories {
